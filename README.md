@@ -53,11 +53,11 @@ Ensure you have the following installed:
 
 3.  **Database Configuration**
     The script tries to connect to `localhost` with user `root`.
-    * **Important:** Open `main.py` and update the `DB_PASSWORD` variable at the top with your MySQL root password.
+    * **Important:** Open `main.py` and look for the connection line (approx line 14):
     ```python
-    # Inside main.py
-    DB_PASSWORD = 'YOUR_PASSWORD'
+    mycon=sqltor.connect(host='localhost',user='root',passwd='password',database='school_db')
     ```
+    * Change `'password'` to your actual MySQL root password.
 
 4.  **Run the Application**
     ```bash
