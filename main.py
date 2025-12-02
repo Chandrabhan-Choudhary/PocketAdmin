@@ -1,3 +1,9 @@
+# ==========================================
+# PocketAdmin: Mobile-Built Student Manager
+# Author: Chandrabhan Choudhary
+# Built on: Replit (Mobile)
+# ==========================================
+
 #  Student Management System 
 # Importing Required Libraries and Modules
 import mysql.connector as sqltor
