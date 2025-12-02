@@ -165,9 +165,9 @@ def delete():
     print(b)
     print('              Delete Records')
     print(b)
-    Admno=[input('Admission  Number To delete ~ ')]
+    Admno=input('Admission Number To delete ~ ')
     qry="delete from student where Admno=%s"
-    cursor.execute(qry,(Admno))
+    cursor.execute(qry,(Admno,))
     cursor.rowcount
     mycon.commit()
     print(' ')
@@ -197,9 +197,9 @@ def search():
     print(b)
     print('            Search For Student')
     print(b)
-    Rollno=[input('Roll Number To Be Searched ~ ')]
+    Rollno=input('Roll Number To Be Searched ~ ')
     qry="select * from student where Rollno=%s"
-    cursor.execute(qry,(Rollno))
+    cursor.execute(qry,(Rollno,))
     cursor.rowcount
     rows = cursor.fetchall()
 
