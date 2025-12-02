@@ -53,14 +53,15 @@ Ensure you have the following installed:
 
 3.  **Database Configuration**
     The script tries to connect to `localhost` with user `root`.
-    * **Important:** Open `student_management.py` and update the `passwd` variable with your MySQL root password.
+    * **Important:** Open `main.py` and update the `DB_PASSWORD` variable at the top with your MySQL root password.
     ```python
-    mycon = sqltor.connect(host='localhost', user='root', passwd='YOUR_PASSWORD', database='school_db')
+    # Inside main.py
+    DB_PASSWORD = 'YOUR_PASSWORD'
     ```
 
 4.  **Run the Application**
     ```bash
-    python student_management.py
+    python main.py
     ```
 
 ## 🏃 Usage
@@ -72,3 +73,21 @@ Once running, the interactive menu will guide you:
 2 : View Database
 3 : Graphical Analysis
 4 : Exit
+Option 1: Add/Update/Delete students.
+
+Option 2: View table of all students.
+
+Option 3: Generate a bar chart of class strength.
+
+📂 Project Structure
+PocketAdmin/
+├── main.py                # Main source code
+├── legacy_notebooks/      # (Optional) Original Colab notebooks
+└── README.md              # Documentation
+🤝 Contributing
+Contributions are welcome! If you have a laptop (or a phone!), feel free to fork this repo and submit a PR.
+
+📜 License
+This project is licensed under the MIT License.
+
+Created by Chandrabhan Choudhary
